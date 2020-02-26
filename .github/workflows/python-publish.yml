@@ -23,5 +23,6 @@ jobs:
         TWINE_PASSWORD: 'TOKEN'
       run: |
         cd python
+        cp ../names.json ./name_prettier
         python setup.py sdist bdist_wheel
         twine upload dist/*
